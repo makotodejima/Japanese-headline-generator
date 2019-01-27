@@ -1,0 +1,14 @@
+div {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 1000px;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: #508eb5;
+}

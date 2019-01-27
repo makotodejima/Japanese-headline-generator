@@ -1,9 +1,20 @@
-const main = document.querySelector("main");
-const p = document.createElement("p");
+const div = document.querySelector("div");
+const headline = document.createElement("h1");
+const span = document.querySelector("span");
 
-p.textContent = generate();
+headline.onclick = function() {
+  document.execCommand("copy");
+};
 
-main.appendChild(p);
+// headline.addEventListener("copy", function(event) {
+//   event.preventDefault();
+//   if (event.clipboardData) {
+//     event.clipboardData.setData("text/plain", headline.textContent);
+//   }
+// });
+
+headline.textContent = generate();
+div.appendChild(headline);
 
 function rando(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
@@ -13,8 +24,8 @@ function generate() {
   const nouns = [
     "SMAP",
     "嵐",
-    "渡辺なおみ",
-    "わたべ",
+    "渡辺ナオミ",
+    "アンジャッシュ渡部",
     "松本人志",
     "タモリ",
     "張本勲",
@@ -23,7 +34,9 @@ function generate() {
     "最高裁",
     "バンクシー",
     "日テレアナウンサー",
-    "こんまりさん"
+    "こんまりさん",
+    "西野カナ",
+    "キンコン西野"
   ];
 
   const adverbs = [
@@ -37,9 +50,10 @@ function generate() {
     "気合と根性で",
     "プリキュア好きが功を奏し",
     "惜しまれつつ",
-    "放送事故すんぜんの",
+    "放送事故寸前の",
     "ネット上で",
-    "キッパリと"
+    "キッパリと",
+    "M-1の結果受け"
   ];
 
   const verbs = [
