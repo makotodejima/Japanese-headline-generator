@@ -10,12 +10,22 @@ div {
 
 h1 {
   text-align: center;
-  color: #508eb5;
+  color: #ed6b4e;
 }
 
 .pure-button {
   position: fixed;
   top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+p {
+  font-size: 70%;
+  text-align: center;
+  color: #7b7e80;
+  position: fixed;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
