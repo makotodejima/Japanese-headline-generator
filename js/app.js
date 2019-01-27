@@ -29,6 +29,7 @@ function rando(arr) {
 
 function generate() {
   const nouns = [
+    "ピース綾部",
     "SMAP",
     "嵐",
     "渡辺ナオミ",
@@ -43,7 +44,8 @@ function generate() {
     "日テレアナウンサー",
     "こんまりさん",
     "西野カナ",
-    "キンコン西野"
+    "キンコン西野",
+    "秋元康"
   ];
 
   const adverbs = [
@@ -80,7 +82,13 @@ function generate() {
     "反響があつまる",
     "ファンからは悲鳴",
     "変わり果てた姿に唖然",
-    "物議を醸す"
+    "物議を醸す",
+    "こだわりを見せる",
+    "「自由な生活がしたい」",
+    "抗議の電話殺到!?",
+    "あすまで大雪警戒",
+    "激怒",
+    "フジテレビに批判"
   ];
 
   return `${rando(nouns)}、${rando(adverbs)}${rando(verbs)}`;
