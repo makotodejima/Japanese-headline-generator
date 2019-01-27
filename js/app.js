@@ -1,9 +1,12 @@
 const div = document.querySelector("div");
 const headline = document.querySelector("h1");
 const btn = document.querySelector("a");
+const prevBtn = document.querySelector(".prev");
+let prevHeadline;
 
-// first load
-headline.textContent = "Japanese News Headline Generator";
+// Initial load
+headline.textContent = "Japan News Headline Generator";
+prevBtn.style.display = "none";
 
 // Copy text on click
 headline.onclick = function() {
@@ -19,7 +22,13 @@ headline.addEventListener("copy", function(event) {
 });
 
 btn.addEventListener("click", () => {
+  prevHeadline = headline.textContent;
   headline.textContent = generate();
+  prevBtn.style.display = "block";
+});
+
+prevBtn.addEventListener("click", () => {
+  headline.textContent = prevHeadline;
 });
 
 // Arr randomise function
